@@ -1,0 +1,201 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.one {
+  background-color: rgb(203, 191, 191);
+  grid-area: one;
+
+  margin-bottom: 30px;
+}
+
+.two {
+  background-color: grey;
+  grid-area: two;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
+}
+.three {
+  background-color: violet;
+  grid-area: three;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
+}
+
+.four {
+  background-color: rgb(89, 54, 66);
+  grid-area: four;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
+}
+
+.five {
+  background-color: rgb(33, 55, 109);
+  grid-area: five;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
+}
+
+#contenedor-grid {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-areas: "one" "two" "three" "four" "five";
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.two form {
+  display: flex;
+  margin: 16px;
+}
+
+.primerenvuelto {
+  margin-right: 30px;
+}
+.partedos {
+  display: flex;
+  flex-direction: column;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+html {
+  font-size: 65.5%;
+}
+
+body {
+  background-color: #4f85f1;
+}
+nav {
+  background-color: rgb(38, 83, 231);
+  padding: 20px 30px;
+  height: 40px;
+  /*funciona*/
+}
+  nav img {
+    width: 220px;
+    float: left;
+    /* height: 150px; */
+    /*funciona*/
+  }
+
+nav ul {
+  list-style: right;
+  float: right;
+}
+nav ul li {
+  display: inline-block;
+  margin-right: 40px;
+}
+/*funciona*/
+
+nav ul li a {
+  color: rgb(219, 220, 222);
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 200;
+  /*funciona*/
+}
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 9rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+legend {
+  font-family: impact, sans-serif;
+  font-size: 20px;
+}
+h1,
+h2,
+h3 {
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+
+section {
+  padding: 30px 80px;
+}
+
+.labelFormulario {
+  font-size: 20px;
+  font-style: italic;
+}
+
+.labelcolor {
+  color: white;
+}
+
+input {
+  color: black;
+}
+
+/*selectores de clases*/
+.textCenter {
+  text-align: center;
+}
+.textBold {
+  font-weight: 100;
+}
+.textRegular {
+  font-weight: 400;
+}
+
+legend {
+  color: rgb(29, 30, 100);
+  font-weight: bold;
+}
+
+footer a img {
+  width: 70px;
+  height: 70px;
+}
+
+label {
+  font-size: large;
+}
+
+section p {
+  color: black;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 380%;
+  text-align: center;
+  background-color: yellow;
+}
+
+@media screen and (max-width: 700px) {
+  .two {
+    background-color: red;
+  }
+  .primerenvuelto {
+    flex-direction: column;
+  }
+  .partedos {
+    background-color: blue;
+  }
+}

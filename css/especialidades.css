@@ -1,0 +1,231 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.one {
+  background-color: rgb(203, 191, 191);
+  grid-area: one;
+
+  margin-bottom: 30px;
+}
+
+.two {
+  background-color: grey;
+  grid-area: two;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
+  padding: 5em;
+}
+@media screen and (max-width: 700px) {
+  .two {
+    background-color: red;
+  }
+  .fila {
+    flex-direction: column;
+  }
+  .titulo {
+    background-color: rgb(254, 254, 254);
+  }
+}
+.three {
+  background-color: violet;
+  grid-area: three;
+  display: flex;
+  justify-content: space-around;
+  padding: 2em;
+}
+
+.four {
+  background-color: rgb(89, 54, 66);
+  grid-area: four;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
+  padding: 1em;
+}
+
+.five {
+  background-color: rgb(33, 55, 109);
+  grid-area: five;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
+}
+
+#contenedor-grid {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: "one" "two" "three" "four" "five";
+}
+
+.jalador {
+  background-color: rgb(89, 54, 66);
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.fila {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
+}
+
+.contenedor-fila {
+  flex-direction: column;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
+  margin-right: 20px;
+  margin-left: 50px;
+}
+
+.partetwo {
+  display: flex;
+  flex-direction: column;
+}
+
+.partethree {
+  display: flex;
+  flex-direction: column;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+html {
+  font-size: 65.5%;
+}
+body {
+  background-color: #4f85f1;
+}
+nav {
+  background-color: rgb(38, 83, 231);
+  padding: 20px 30px;
+  height: 40px;
+  /*funciona*/
+}
+nav img {
+  width: 220px;
+  float: left;
+  /* height: 150px; */
+  /*funciona*/
+}
+nav ul {
+  list-style: right;
+  float: right;
+}
+nav ul li {
+  display: inline-block;
+  margin-right: 40px;
+}
+
+nav ul li a {
+  color: rgb(219, 220, 222);
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 200;
+}
+
+section {
+  color: black;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 350%;
+  text-align: center;
+  background-color: rgb(0, 0, 0);
+}
+footer a img {
+  width: 70px;
+  height: 70px;
+}
+.maintwo {
+  display: flex;
+  margin: 46px;
+}
+.primerenvuelto {
+  margin-right: 42px;
+}
+
+.partetwo {
+  margin-right: 50px;
+}
+
+.three {
+  margin-left: 100px;
+}
+
+section p {
+  color: black;
+  font-style: italic;
+  font-size: 300%;
+  background-color: rgb(235, 235, 224);
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.contenedor-fila p {
+  color: black;
+  font-style: italic;
+  font-size: 300%;
+  background-color: rgb(107, 120, 234);
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+footer a img {
+  width: 100px;
+  height: 100px;
+}
+
+.jalador section {
+  padding: 1em;
+}
+
+.titulo {
+  color: black;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 350%;
+  text-align: center;
+  background-color: rgb(207, 207, 104);
+  padding: 1em;
+}
+
+.maargin {
+  margin-right: 30px;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-areas: "one" "two" "three" "four" "five";
+}
+
+.chapatress {
+  margin-right: 100;
+  justify-content: space-around;
+}
+.oone {
+  margin-right: 20px;
+}
+
+.twoo {
+  margin-right: 20px;
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grids</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div id="contenedor-grid">
+      <header class="one">
+        <nav class="botonera">
+          <a href="index.html"> </a>
+          <img src="./img/header.png" alt="logo de la pagina" />
+          <ul>
+            <li>
+              <a href="view/especialidades.html">Especialidades</a>
+            </li>
+            <li>
+              <a href="#">Nosotros</a>
+            </li>
+            <li>
+              <a href="#">Contacto</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main class="two">
+        <form action="envio.php" class="padreform">
+          <div class="primerenvuelto">
+            <fieldset>
+              <legend>DATOS PERSONALES</legend>
+              <label for="" class="labelFormulario labelcolor">Nombre:</label>
+              <input type="text" id="nombre" placeholder="Marlon josue" />
+              <br />
+              <label for="Apellidos">Apellidos:</label>
+              <input
+                type="Apellidos"
+                id="Apellidos"
+                placeholder="Pajares Lopez"
+              />
+              <br />
+              <label for="DNI">DNI:</label>
+              <input type="DNI" id="DNI" />
+              <br />
+              <label for="Fecha de emision">fecha de emision</label>
+              <input type="fecha de emision" id="fecha de emision" />
+            </fieldset>
+            <fieldset>
+              <legend>ACEPTO LAS CONDICIONES</legend>
+              <lable for="aceptar">aceptar</lable>
+              <input type="checkbox" id="aceptar" value="aceptar" />
+            </fieldset>
+            <fieldset>
+              <legend>RECOGER RESULTADOS</legend>
+              <label for="Clinica">recoger misma clinica</label>
+              <input type="radio" id="Clinica" value="Clinica" name="envio" />
+              <br />
+              <label for="Email">Correo a mi email</label>
+              <input type="radio" id="Email" value="Email" name="envio" />
+              <select name="" id="localidad">
+                <option value="LIMA">Lima</option>
+                <option value="afuera">Provicia</option>
+              </select>
+            </fieldset>
+          </div>
+
+          <div class="partedos">
+            <label for="mensaje">Deje su comentario</label>
+
+            <textarea name="" id="mensaje" cols="30" rows="10"></textarea>
+            <input type="reset" value="cancelar" />
+            <input type="submit" value="enviar" />
+          </div>
+        </form>
+      </main>
+      <section class="three">
+        <a>
+          <img src="img/ubicanos.jpg" alt="ubicacion de cedes" width="300" />
+        </a>
+      </section>
+      <section class="four">
+        <div id="frase">
+          <h1>
+            Clínica Internacional es una red de clínicas y centros médicos a
+            nivel nacional, con infraestructura médica moderna en tecnología y
+            procedimientos eficientes, complementados plenamente con un staff
+            médico y asistencial altamente calificado y comprometido con la
+            salud de nuestros pacientes y la de su familia.
+          </h1>
+        </div>
+      </section>
+      <section class="five">
+        <footer>
+          <a target="_blank" href="https:facebook.com">
+            <img src="img/logofacebook.jpg" alt="pagina face" />
+          </a>
+          <a target="_blank" href="https://www.twitter.com">
+            <img src="img/twiter.jpg" alt="pagina de twiter" />
+          </a>
+          <a target="_blank" href="https://www.instagram.com">
+            <img src="img/imstalogo.jpg" alt="es la pagina de imstagram" />
+          </a>
+        </footer>
+      </section>
+    </div>
+  </body>
+</html>
