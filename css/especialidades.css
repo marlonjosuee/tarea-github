@@ -229,3 +229,52 @@ footer a img {
 .twoo {
   margin-right: 20px;
 }
+
+@keyframes mianimacion {
+  0% {
+    background-color: aliceblue;
+    left: 0%;
+    top: 0px;
+  }
+  25% {
+    background-color: red;
+    left: 300px;
+    top: 0%px;
+  }
+  50% {
+    background-color: blue;
+    left: 300px;
+    top: 300px;
+  }
+  75% {
+    background-color: blueviolet;
+    left: 0px;
+    top: 300px;
+  }
+  100% {
+    background-color: tomato;
+    left: 0px;
+    top: 0px;
+  }
+}
+
+.titulo {
+  animation-name: mianimacion;
+  animation-duration: 4s;
+  position: relative;
+  animation-timing-function: linear;
+}
+
+.three {
+  animation-name: mianimacion;
+  animation-duration: 4s;
+  position: relative;
+  animation-timing-function: linear;
+}
+
+.contenedor-fila {
+  animation-name: mianimacion;
+  animation-duration: 4s;
+  position: relative;
+  animation-timing-function: linear;
+}

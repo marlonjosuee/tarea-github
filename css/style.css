@@ -23,14 +23,24 @@
   display: flex;
   justify-content: space-around;
   margin-bottom: 30px;
+  border-radius: 1s;
+  text-align: center;
+  width: 400px;
+  transition: width 1s;
+  border-radius: 2s;
 }
 
-.four {
+.three:hover {
+  width: 900px;
+}
+
+.four:hover {
   background-color: rgb(89, 54, 66);
   grid-area: four;
   display: flex;
   justify-content: space-around;
   margin-bottom: 30px;
+  transform: rotateY(-45deg);
 }
 
 .five {
@@ -39,6 +49,7 @@
   display: flex;
   justify-content: space-around;
   margin-bottom: 30px;
+  transform: skew(15deg);
 }
 
 #contenedor-grid {
@@ -62,8 +73,9 @@ header {
   margin: 16px;
 }
 
-.primerenvuelto {
+.primerenvuelto :hover {
   margin-right: 30px;
+  transform: rotate(0deg);
 }
 .partedos {
   display: flex;
@@ -90,12 +102,12 @@ nav {
   height: 40px;
   /*funciona*/
 }
-  nav img {
-    width: 220px;
-    float: left;
-    /* height: 150px; */
-    /*funciona*/
-  }
+nav img {
+  width: 220px;
+  float: left;
+  /* height: 150px; */
+  /*funciona*/
+}
 
 nav ul {
   list-style: right;
@@ -168,6 +180,7 @@ input {
 legend {
   color: rgb(29, 30, 100);
   font-weight: bold;
+  background: linear-gradient(to top, red, yellow);
 }
 
 footer a img {
@@ -197,5 +210,40 @@ section p {
   }
   .partedos {
     background-color: blue;
+  }
+}
+
+.two {
+  animation-name: mianimacion;
+  animation-duration: 4s;
+  position: relative;
+  animation-timing-function: linear;
+}
+
+@keyframes mianimacion {
+  0% {
+    background-color: aliceblue;
+    left: 0%;
+    top: 0px;
+  }
+  25% {
+    background-color: red;
+    left: 300px;
+    top: 0%px;
+  }
+  50% {
+    background-color: blue;
+    left: 300px;
+    top: 300px;
+  }
+  75% {
+    background-color: blueviolet;
+    left: 0px;
+    top: 300px;
+  }
+  100% {
+    background-color: tomato;
+    left: 0px;
+    top: 0px;
   }
 }
